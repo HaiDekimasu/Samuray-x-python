@@ -1,7 +1,7 @@
 from django.shortcuts import render
-from Capitulos.models import Capitulos
+from .models import Capitulos
 # Create your views here.
 
 def Capitulos(request):
     capitulos = Capitulos.objects.all()
-    return render(request, 'capitulos.html',{"capitulos" : capitulos})
+    return render(request, 'capitulos.html',{'capitulos': capitulos})
