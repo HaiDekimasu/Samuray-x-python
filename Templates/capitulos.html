@@ -11,7 +11,17 @@
         <link rel="stylesheet" href="">
     </head>
     <body>
-        {% block content %}<h1>Capitulos</h1>{% endblock content %}
+        {% block content %}
+        {% for capitulo in capitulos %}
+        <div class="card" style="width: 18rem;">
+            <video src="{{ capitulo.video.url }}" controls></video>
+            <div class="card-body">
+                <h5 class="card-title">{{ capitulo.title }}</h5>
+                <p class="card-text">{{ capitulo.text }}</p>
+                <a href="#" class="btn btn-primary">ver video</a>
+            </div>
+        </div>
+        {% endfor %}{% endblock content %}
         <script src="" async defer></script>
     </body>
 </html>
