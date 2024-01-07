@@ -12,7 +12,7 @@
     </head>
     <body>
         {% block content %}
-        {% for capitulo in Capitulos %}
+        {% for capitulo in capitulos %}
         <div class="card" style="width: 18rem;">
             <video src="{{ capitulo.video.url }}" controls></video>
             <div class="card-body">
