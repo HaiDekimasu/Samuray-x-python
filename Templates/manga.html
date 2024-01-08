@@ -10,23 +10,23 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
     </head>
-    <body>{% block content %}
-        
-        {% for manga in manga %}
-        <div class="" style="width: 18rem;">
-            <div class="">
-                <img src="{{ manga.imagen.url }}" class="d-block w-100 ">
-                <h1 class="card-title">{{ manga.title }}</h>
-                <p class="card-text">{{ manga.text }}</p>
+    <body>
+        {% block content %}
+            {% for manga in mangas %}
+            <div class="" style="width: 18rem;">
+                <div class="">
+                    <img src="{{ manga.img.url }}" class="d-block w-100">
+                    <h1 class="card-title">{{ manga.title }}</h>
+                    <p class="card-text">{{ manga.text }}</p>
+                </div>
             </div>
-        </div>
-        {% endfor %}
-        <ul>
-            <li><a class="" href="{% static 'manga/Rurouni Kenshin - Tomo 01 (#001-008)_compressed.pdf' %}" target="_blank">Tomo 1</a></li>
-            <li><a class="" href="{% static 'manga/Rurouni Kenshin - Tomo 02 (#009-020).pdf' %}" target="_blank">Tomo 2</a></li>
-            <li><a class="" href="{% static 'manga/Rurouni Kenshin - Tomo 03 (#021-028)_compressed.pdf' %}" target="_blank">Tomo 3</a></li>
-        </ul>
-    {% endblock content %}
+            {% endfor %}
+            <ul>
+                <li><a class="" href="{% static 'manga/Rurouni Kenshin - Tomo 01 (#001-008)_compressed.pdf' %}" target="_blank">Tomo 1</a></li>
+                <li><a class="" href="{% static 'manga/Rurouni Kenshin - Tomo 02 (#009-020).pdf' %}" target="_blank">Tomo 2</a></li>
+                <li><a class="" href="{% static 'manga/Rurouni Kenshin - Tomo 03 (#021-028)_compressed.pdf' %}" target="_blank">Tomo 3</a></li>
+            </ul>
+        {% endblock content %}
         <script src="" async defer></script>
     </body>
 </html>
