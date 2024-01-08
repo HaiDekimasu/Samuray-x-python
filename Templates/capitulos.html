@@ -9,13 +9,25 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
+        <link href="https://vjs.zencdn.net/8.9.0/video-js.css" rel="stylesheet" />
     </head>
     <body>
         {% block content %}
         {% for capitulo in capitulos %}
         <div class="card" style="width: 18rem;">
-            <video src="{{ capitulo.video.url }}" controls></video>
             <div class="card-body">
+            <video
+                id="my-video"
+                class="video-js"
+                controls
+                preload="auto"
+                width="640"
+                height="264"
+                poster="MY_VIDEO_POSTER.jpg"
+                data-setup="{}"
+            >
+            <source src="{{ capitulo.video.url }}" type="video/mp4" />
+            
                 <h5 class="card-title">{{ capitulo.title }}</h5>
                 <p class="card-text">{{ capitulo.text }}</p>
                 <a href="#" class="btn btn-primary">ver video</a>
@@ -23,6 +35,6 @@
         </div>
         {% endfor %}
         {% endblock content %}
-        <script src="" async defer></script>
+        <script src="https://vjs.zencdn.net/8.9.0/video.min.js"></script>
     </body>
 </html>
