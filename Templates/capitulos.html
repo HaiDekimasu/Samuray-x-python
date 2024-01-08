@@ -26,8 +26,8 @@
                     poster=""
                     data-setup="{}"
                 >
-                <source src="{{ capitulo.video.url }}" type="video" />
-            
+                <video src="{{ capitulo.video.url }}" controls id="my-video"
+                class="video-js" preload="auto" width="640" height="264" data-setup="{}"></video>
                 <h5 class="card-title">{{ capitulo.title }}</h5>
                 <p class="card-text">{{ capitulo.text }}</p>
                 <a href="#" class="btn btn-primary">ver video</a>
