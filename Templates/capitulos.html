@@ -16,17 +16,17 @@
         {% for capitulo in capitulos %}
         <div class="card" style="width: 18rem;">
             <div class="card-body">
-            <video
-                id="my-video"
-                class="video-js"
-                controls
-                preload="auto"
-                width="640"
-                height="264"
-                poster="MY_VIDEO_POSTER.jpg"
-                data-setup="{}"
-            >
-            <source src="{{ capitulo.video.url }}" type="video/mp4" />
+                <video
+                    id="my-video"
+                    class="video-js"
+                    controls
+                    preload="auto"
+                    width="640"
+                    height="264"
+                    poster=""
+                    data-setup="{}"
+                >
+                <source src="{{ capitulo.video.url }}" type="video" />
             
                 <h5 class="card-title">{{ capitulo.title }}</h5>
                 <p class="card-text">{{ capitulo.text }}</p>
