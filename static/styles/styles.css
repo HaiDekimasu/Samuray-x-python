@@ -9,13 +9,7 @@ body{
 a{
     list-style: none;
 }
-:root{
---fonts-manga: manga;
-}
-@font-face {
-    font-family: manga;
-    src: url(fonts/manga.ttf);
-}
+
 /* background-image: linear-gradient(to right,#220080,#630005,#59008dc2); */
 
 /*CONTENEDOR PRINCIPAL_________________________________________________________________________________________*/
@@ -72,9 +66,9 @@ a{
 /*BOTONES___________________________________________________________________________*/
 .botonnav {
     text-decoration: none;
-    color: #bca9ff77;
+    color: #5c139c;
     cursor: pointer;
-    font-family: var(--fonts-manga);
     font-size: x-large;
+    font-family: 'Permanent Marker', cursive;
 }
 /**/
