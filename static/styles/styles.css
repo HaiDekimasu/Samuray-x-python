@@ -71,4 +71,23 @@ a{
     font-size: x-large;
     font-family: 'Permanent Marker', cursive;
 }
-/*content___________________________________________________________________________*/
+/*FOOTER___________________________________________________________________________*/
+.containerfooter{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-image: linear-gradient(to right,#220080,#630005,#59008dc2);
+}
+.containerfooter p{
+    color: #e1bfff;
+}
+.containerfooter h5 h6{
+    color: #e1bfff;
+}
+.containerfooter a{
+    color: #e1bfff;
+    text-decoration: none;
+}
+.copifooter{
+    display: block;
+}
