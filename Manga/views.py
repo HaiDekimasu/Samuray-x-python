@@ -3,5 +3,5 @@ from .models import Manga
 
 # Create your views here.
 def manga(request):
-    manga = Manga.objects.all()
-    return render(request, 'manga.html', {'manga': manga})
+    mangas = Manga.objects.all()
+    return render(request, 'manga.html', {'mangas': mangas})
