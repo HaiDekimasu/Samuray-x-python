@@ -8,7 +8,7 @@ body{
 a{
     list-style: none;
 }
-/*navbar_________________________________________________________________________________________*/
+/*CONTENEDOR PRINCIPAL_________________________________________________________________________________________*/
 .containernav{
     display: flex;
     justify-content: space-evenly;
@@ -17,14 +17,14 @@ a{
     height: 20%;
     background-image: linear-gradient(to right,#220080,#630005,#59008dc2);
 }
-/*nav-list_______________________________________________________________________________________*/
+/*SUB CONTENEDORES_______________________________________________________________________________________*/
 .navbar{
     width: 25%;
     height: 100%;
     position: relative;
     float: inline-end;
 }
-/*_barra nav botones_____________________________________________________________________________*/
+/* CONTENEDOR DE CADA BOTON______________________________________________________________________________*/
 .nav-list {
     background: transparent;
     color: #fff;
@@ -62,6 +62,7 @@ a{
     transform: rotateY(360deg);
     }
 }
+/*BOTONES___________________________________________________________________________*/
 .botonnav {
     text-decoration: none;
     color: #fff;
