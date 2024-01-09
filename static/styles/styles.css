@@ -15,6 +15,7 @@ a{
 /*CONTENEDOR PRINCIPAL_________________________________________________________________________________________*/
 .containernav{
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
@@ -81,12 +82,13 @@ a{
 .containerfooter p{
     color: #e1bfff;
 }
-.containerfooter h5 h6{
+.containerfooter h5{
     color: #e1bfff;
 }
 .containerfooter a{
-    color: #e1bfff;
+    color: #c28cf193;
     text-decoration: none;
+    font-size: large;
 }
 .copifooter{
     display: block;
