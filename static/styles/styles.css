@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     
@@ -9,11 +10,11 @@ a{
     list-style: none;
 }
 :root{
---fonts-text: manga;
+--fonts-manga: manga;
 }
 @font-face {
     font-family: manga;
-    src: url(/fonts/manga.ttf);
+    src: url(fonts/manga.ttf);
 }
 /* background-image: linear-gradient(to right,#220080,#630005,#59008dc2); */
 
@@ -32,6 +33,7 @@ a{
     height: 100%;
     position: relative;
     float: inline-end;
+    text-align: center;
 }
 /* CONTENEDOR DE CADA BOTON______________________________________________________________________________*/
 .nav-list {
@@ -70,9 +72,9 @@ a{
 /*BOTONES___________________________________________________________________________*/
 .botonnav {
     text-decoration: none;
-    color: #fff;
+    color: #bca9ff77;
     cursor: pointer;
-    font-family: var(--fonts-text);
-    
+    font-family: var(--fonts-manga);
+    font-size: x-large;
 }
 /**/
