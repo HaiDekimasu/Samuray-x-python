@@ -129,12 +129,26 @@ main{
     align-items: center;
     text-align: center;
 }
+.card video{
+    width: 96%;
+    margin-bottom: 2%;
+    height: auto;
+}
+/*CONTAINER MANGA____________________________________________________________________________*/
+.card img{
+    width: 50%;
+    height: auto;
+}
+.tomos{
+    width:100% ;
+}
+
 /*FOOTER___________________________________________________________________________*/
 
 .containerfooter{
     display: flex;
-    position: relative;
-    bottom: 0;
+    position: absolute;
+    bottom: 0 !important;
     height: auto;
     width: 100%;
     max-height: 100vh;
