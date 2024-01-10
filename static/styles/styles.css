@@ -71,6 +71,18 @@ a{
     font-size: x-large;
     font-family: 'Permanent Marker', cursive;
 }
+/*INICIO___________________________________________________________________________*/
+.inicio{
+    background-image:url(/media/img/port01.jpg);
+    background-repeat: no-repeat;    
+    background-attachment: fixed;
+    background-size: 100% 100%; ;
+}
+.portini{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
 /*FOOTER___________________________________________________________________________*/
 .containerfooter{
     display: flex;
