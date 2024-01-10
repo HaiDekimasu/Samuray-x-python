@@ -24,11 +24,13 @@ footer{
 }
 main{
     height: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 /* background-image: linear-gradient(to right,#220080,#630005,#59008dc2); */
 
-/*CONTENEDOR PRINCIPAL_________________________________________________________________________________________*/
+/*CONTENEDOR BARRA DE NAVEGACION_________________________________________________________________________________________*/
 .containernav{
     display: flex;
     justify-content: space-evenly;
@@ -37,7 +39,7 @@ main{
     height: 20%;
     background-image: linear-gradient(to right,#220080,#630005,#59008dc2);
 }
-/*SUB CONTENEDORES_______________________________________________________________________________________*/
+/*SUB CONTENEDORES BARRA DE NAVEGACION_______________________________________________________________________________________*/
 .navbar{
     width: auto;
     height: 100%;
@@ -87,10 +89,11 @@ main{
     font-size: x-large;
     font-family: 'Permanent Marker', cursive;
 }
-/*INICIO___________________________________________________________________________*/
+/*iNDEX.HTML___________________________________________________________________________*/
 
 .portini{
     margin-top: 6%;
+    margin-bottom: 6%;
     height: 100%;
     width: 100%;
     display: flex;
@@ -103,10 +106,38 @@ main{
 }
 /*containercap_______________________________________________________________________*/
 .containercap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 100%;
-    width: 100%;
+    width: 50%;
+}
+.card{
+    margin-top: 3% !important;
+    margin-bottom: 3% !important;
+    padding-top: 2%;
+    flex: 1;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: linear-gradient(to right,#220080,#630005,#59008dc2);
+}
+.card-body{
+    display: contents;
+}
+.card-title{
+    color: #e1bfff;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 /*FOOTER___________________________________________________________________________*/
+
 .containerfooter{
     display: flex;
     flex-direction: column;
