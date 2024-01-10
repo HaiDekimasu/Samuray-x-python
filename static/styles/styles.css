@@ -99,6 +99,10 @@ a{
     display: block;
     color: #e1bfff;
 }
+.list-unstyledn{
+    margin-left: 0;
+}
 .text-body{
+    text-decoration: none;
     color: #c28cf193;
 }
