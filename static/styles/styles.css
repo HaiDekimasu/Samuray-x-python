@@ -90,7 +90,15 @@ a{
     text-decoration: none;
     font-size: large;
 }
+.containerfooter li{
+    list-style-type: none;
+}
 .copifooter{
+    text-align: center;
+    justify-content: center;
     display: block;
-
+    color: #e1bfff;
+}
+.text-body{
+    color: #c28cf193;
 }
