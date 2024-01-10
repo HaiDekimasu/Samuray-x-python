@@ -15,7 +15,6 @@ a{
 /*CONTENEDOR PRINCIPAL_________________________________________________________________________________________*/
 .containernav{
     display: flex;
-    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
@@ -75,6 +74,7 @@ a{
 /*FOOTER___________________________________________________________________________*/
 .containerfooter{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     width: 100%;
     background-image: linear-gradient(to right,#220080,#630005,#59008dc2);
@@ -92,4 +92,5 @@ a{
 }
 .copifooter{
     display: block;
+
 }
