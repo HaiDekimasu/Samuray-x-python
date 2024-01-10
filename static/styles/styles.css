@@ -5,7 +5,7 @@
     list-style: none;
 }
 body{
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background-image:url(/media/img/port01.jpg);
     background-repeat: no-repeat;    
@@ -14,6 +14,14 @@ body{
 }
 a{
     list-style: none;
+}
+footer{
+    position: absolute;
+    bottom: 0 !important;
+    width: 100%;
+}
+main{
+    height: 100%;
 }
 
 /* background-image: linear-gradient(to right,#220080,#630005,#59008dc2); */
@@ -80,9 +88,8 @@ a{
 /*INICIO___________________________________________________________________________*/
 
 .portini{
-    position: absolute;
-    top: 50%;
-    height: 70%;
+    margin-top: 6%;
+    height: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -94,17 +101,14 @@ a{
 }
 /*containercap_______________________________________________________________________*/
 .containercap{
-    height: 80%;
+    height: 100%;
     width: 100%;
 }
 /*FOOTER___________________________________________________________________________*/
 .containerfooter{
-    position: absolute;
-    bottom: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
     background-image: linear-gradient(to right,#220080,#630005,#59008dc2);
 }
 .containerfooter p{

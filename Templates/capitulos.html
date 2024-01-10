@@ -11,10 +11,10 @@
         <link rel="stylesheet" href="">
     </head>
     <body>
+        {% block content %}
         <div class="containercap">
-            {% block content %}
             {% for capitulo in capitulos %}
-            <div class="card" style="width: 18rem;">
+            <div class="card">
                 <div class="card-body">
                     <video src="{{ capitulo.video.url }}" controls ></video>
                     <h5 class="card-title">{{ capitulo.title }}</h5>
@@ -23,7 +23,7 @@
                 </div>
             </div>
             {% endfor %}
-            {% endblock content %}
         </div>
+        {% endblock content %}
     </body>
 </html>
