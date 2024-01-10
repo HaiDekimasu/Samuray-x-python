@@ -1,11 +1,23 @@
 
 *{
     margin: 0;
-    
+    padding: 0;
+    list-style: none;
 }
 body{
     height: 100vh;
+    width: 100%;
+    background-image:url(/media/img/port01.jpg);
+    background-repeat: no-repeat;    
+    background-attachment: fixed;
+    background-size: 100% 100%;
 }
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
 a{
     list-style: none;
 }
@@ -72,13 +84,10 @@ a{
     font-family: 'Permanent Marker', cursive;
 }
 /*INICIO___________________________________________________________________________*/
-.inicio{
-    background-image:url(/media/img/port01.jpg);
-    background-repeat: no-repeat;    
-    background-attachment: fixed;
-    background-size: 100% 100%; ;
-}
+
 .portini{
+    height: 70%;
+    width: 100%;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -111,10 +120,11 @@ a{
     display: block;
     color: #e1bfff;
 }
-.list-unstyledn{
-    margin-left: 0;
+.list-unstyledn ul{
+    margin-left: 0 !important;
 }
 .text-body{
+    
     text-decoration: none;
-    color: #c28cf193;
+    color: #e4daecf8;
 }
