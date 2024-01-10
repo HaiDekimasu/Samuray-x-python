@@ -85,8 +85,8 @@ main{
 /*iNDEX.HTML___________________________________________________________________________*/
 
 .portini{
-    margin-top: 6%;
-    margin-bottom: 6%;
+    margin-top: 25%;
+    margin-bottom: 40%;
     height: 100%;
     width: 100%;
     display: flex;
@@ -147,7 +147,7 @@ main{
 
 .containerfooter{
     display: flex;
-    position: absolute;
+    position: relative;
     bottom: 0 !important;
     height: auto;
     width: 100%;
