@@ -12,12 +12,6 @@ body{
     background-attachment: fixed;
     background-size: 100% 100%;
 }
-footer{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-
 a{
     list-style: none;
 }
@@ -86,14 +80,27 @@ a{
 /*INICIO___________________________________________________________________________*/
 
 .portini{
+    position: absolute;
+    top: 50%;
     height: 70%;
     width: 100%;
     display: flex;
     justify-content: center;
     text-align: center;
+    color: #630005;
+    text-shadow: 0 0 10px #e1bfff;
+    font-size: 6rem;
+    font-family: 'Permanent Marker', cursive;
+}
+/*containercap_______________________________________________________________________*/
+.containercap{
+    height: 80%;
+    width: 100%;
 }
 /*FOOTER___________________________________________________________________________*/
 .containerfooter{
+    position: absolute;
+    bottom: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -120,11 +127,10 @@ a{
     display: block;
     color: #e1bfff;
 }
-.list-unstyledn ul{
-    margin-left: 0 !important;
+.containerfooter ul{
+    padding-left: 0 !important;
 }
 .text-body{
-    
     text-decoration: none;
-    color: #e4daecf8;
+    color: #c28cf193 !important;
 }

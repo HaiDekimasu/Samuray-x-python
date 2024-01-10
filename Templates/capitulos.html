@@ -11,17 +11,19 @@
         <link rel="stylesheet" href="">
     </head>
     <body>
-        {% block content %}
-        {% for capitulo in capitulos %}
-        <div class="card" style="width: 18rem;">
-            <div class="card-body">
-                <video src="{{ capitulo.video.url }}" controls ></video>
-                <h5 class="card-title">{{ capitulo.title }}</h5>
-                <p class="card-text">{{ capitulo.text }}</p>
-                <a href="#" class="btn btn-primary">ver video</a>
+        <div class="containercap">
+            {% block content %}
+            {% for capitulo in capitulos %}
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <video src="{{ capitulo.video.url }}" controls ></video>
+                    <h5 class="card-title">{{ capitulo.title }}</h5>
+                    <p class="card-text">{{ capitulo.text }}</p>
+                    <a href="#" class="btn btn-primary">ver video</a>
+                </div>
             </div>
+            {% endfor %}
+            {% endblock content %}
         </div>
-        {% endfor %}
-        {% endblock content %}
     </body>
 </html>
