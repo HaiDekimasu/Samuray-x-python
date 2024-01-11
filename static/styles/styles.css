@@ -29,16 +29,8 @@ main{
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
-    height: 20%;
+    height: 5rem;
     background-image: linear-gradient(to right,#220080,#630005,#59008dc2);
-}
-/*SUB CONTENEDORES BARRA DE NAVEGACION_______________________________________________________________________________________*/
-.navbar{
-    width: auto;
-    height: 100%;
-    position: relative;
-    float: inline-end;
-    text-align: center;
 }
 /* CONTENEDOR DE CADA BOTON______________________________________________________________________________*/
 .nav-list {
@@ -76,6 +68,8 @@ main{
 }
 /*BOTONES___________________________________________________________________________*/
 .botonnav {
+    display: block;
+    text-align: center;
     text-decoration: none;
     color: #e1bfff;
     cursor: pointer;
