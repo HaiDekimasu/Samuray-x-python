@@ -65,10 +65,13 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                # New context processor added here:
+                'mega_urls.context_processors.get_mega_url_download',
             ],
         },
     },
 ]
+
 
 WSGI_APPLICATION = 'Samuray_X.wsgi.application'
 
