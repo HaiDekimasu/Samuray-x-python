@@ -17,7 +17,9 @@
                 {% for capitulo in capitulos %}
                 <div class="card">
                     <div class="card-body">
-                        <video src="{{ capitulo.video.url }}" controls ></video>
+                        {% if capitulo.iframe_url %}
+                        <iframe src="{{ capitulo.iframe_url }}" width="560" height="315" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        {% endif %}
                         <h5 class="card-title">{{ capitulo.title }}</h5>
                         <p class="card-title">{{ capitulo.text }}</p>
                     </div>
