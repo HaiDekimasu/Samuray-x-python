@@ -1,5 +1,6 @@
 {% extends "layout/base.html" %}
 {% load static %}
+{% load mega_urls %}
 <!DOCTYPE html>
 <html>
     <head>
@@ -25,9 +26,9 @@
             {% endfor %}
             <div class="tomos">
                 <ul class="card">
-                    <li><a class="botonnav" href="{% static 'manga/Tomo01.pdf' %}" target="_blank">Rurouni Kenshin - Tomo 01 (#001-008)</a></li>
-                    <li><a class="botonnav" href="{% static 'manga/Tomo02.pdf' %}" target="_blank">Rurouni Kenshin - Tomo 02 (#009-020)</a></li>
-                    <li><a class="botonnav" href="{% static 'manga/Tomo03.pdf' %}" target="_blank">Rurouni Kenshin - Tomo 03 (#021-028)</a></li>
+                    
+                    <a class="botonnav" href="{% call get_mega_url_download 'https://mega.nz/file/HjQRBCYC#bSUYO-eXKFtGKToG4sng_CHZEBUzJxiu5V3BkDigv04' %}">Descargar</a>
+
                 </ul>
             </div>
         </div>
