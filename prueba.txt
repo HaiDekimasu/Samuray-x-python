@@ -1,0 +1,12 @@
+Django==5.0
+django-seed==0.3.1
+gunicorn==21.2.0
+Pillow==9.5.0
+psycopg2==2.9.6
+pygame==2.4.0
+source==1.2.0
+sqlparse==0.4.3
+sudo==1.0.0
+tzdata==2022.7
+virtualenv==20.17.1
+whitenoise==6.6.0
