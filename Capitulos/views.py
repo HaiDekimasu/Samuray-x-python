@@ -9,7 +9,6 @@ def capitulos(request):
         title = request.POST["title"]
         text = request.POST["text"]
         iframe_url = request.POST["iframe_url"]
-
         capitulos = Capitulos.objects.create(
             title=title,
             text=text,
